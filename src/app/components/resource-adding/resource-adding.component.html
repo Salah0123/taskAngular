@@ -1,0 +1,210 @@
+
+
+
+
+    <div class="row gx-lg-3  mt-5 p-4 justify-content-center justify-content-lg-between" [dir]="'dir' | translate">
+      <div class="col-lg-6 col-sm-12 bg-light rounded-3 p-3 mb-4"  >
+        <div class="p-3" dir="rtl">
+          <label for="basic-url" class="form-label secondTextColor"> المورد متاح الى</label>
+          <div class="input-group mb-3" dir="ltr">
+            <select name="" id="" class="select px-3">
+              <option value="">شهر</option>
+              <option value="">سنه</option>
+            </select>
+            <input type="number" class="form-control firstSecInput" id="basic-url" aria-describedby="basic-addon3">
+          </div>
+
+
+          <div>
+            <p class="secondTextColor m-0 mb-3">
+              وقت المورد
+            </p>
+            <div class="align-items-center justify-content-between flex-sm-column row flex-lg-row align-items-center justify-content-lg-between
+" dir="rtl">
+              <div class="form-check col-sm-12 mb-3 col-lg-3">
+                <input #ServiceTime class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked (click)="showTimeCounter(ServiceTime)">
+                <label class="form-check-label" for="flexRadioDefault1">
+                  <svg width="23" height="24" viewBox="0 0 23 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="vuesax/outline/box-time">
+                      <g id="box-time">
+                        <path id="Vector"
+                          d="M11.4655 13.5517C11.3444 13.5517 11.2232 13.5233 11.1114 13.4568L2.88465 8.60257C2.54924 8.40308 2.43742 7.96608 2.63307 7.6241C2.82873 7.28212 3.24799 7.16811 3.59271 7.3676L11.4655 12.0128L19.2917 7.39612C19.6271 7.19663 20.0557 7.32014 20.2513 7.65263C20.447 7.99461 20.3259 8.43155 19.9998 8.63104L11.8289 13.4568C11.7077 13.5138 11.5866 13.5517 11.4655 13.5517Z"
+                          fill="#D6DDE5" />
+                        <path id="Vector_2"
+                          d="M11.4656 22.1583C11.0836 22.1583 10.7669 21.8353 10.7669 21.4458V12.8298C10.7669 12.4404 11.0836 12.1174 11.4656 12.1174C11.8476 12.1174 12.1644 12.4404 12.1644 12.8298V21.4458C12.1644 21.8353 11.8476 22.1583 11.4656 22.1583Z"
+                          fill="#D6DDE5" />
+                        <path id="Vector_3"
+                          d="M11.4655 22.5287C10.6456 22.5287 9.82574 22.3482 9.19219 21.9777L4.21698 19.1659C2.86603 18.406 1.80391 16.5726 1.80391 14.9957V9.61894C1.80391 8.04203 2.86603 6.21818 4.21698 5.44872L9.19219 2.63687C10.4593 1.91491 12.4531 1.91491 13.7295 2.63687L18.7047 5.44872C20.0557 6.20868 21.1178 8.04203 21.1178 9.61894V14.9957C21.1178 15.0622 21.1178 15.1571 21.0898 15.2806C21.0339 15.5276 20.8569 15.7271 20.624 15.8031C20.3911 15.8791 20.1302 15.8316 19.9439 15.6606C18.8818 14.7107 17.2233 14.6727 16.0867 15.5941C15.3693 16.1736 14.95 17.057 14.95 17.9975C14.95 18.5579 15.0991 19.1089 15.3879 19.5839C15.4625 19.7169 15.537 19.8214 15.6208 19.9164C15.7606 20.0779 15.8165 20.2963 15.7792 20.5053C15.742 20.7143 15.6115 20.9043 15.4252 20.9993L13.7202 21.9588C13.096 22.3482 12.2854 22.5287 11.4655 22.5287ZM11.4655 3.52982C10.8879 3.52982 10.3009 3.65331 9.88163 3.8908L4.90642 6.70266C4.00268 7.21563 3.22007 8.574 3.22007 9.61894V14.9957C3.22007 16.0406 4.012 17.4085 4.90642 17.912L9.88163 20.7238C10.7295 21.2083 12.2109 21.2083 13.0587 20.7238L14.1022 20.1348C13.7575 19.4984 13.5711 18.7574 13.5711 17.9975C13.5711 16.6105 14.1767 15.3282 15.2295 14.4732C16.506 13.4378 18.3134 13.2192 19.7296 13.8462V9.60949C19.7296 8.56455 18.9377 7.19662 18.0432 6.69315L13.068 3.88129C12.6301 3.65331 12.0432 3.52982 11.4655 3.52982Z"
+                          fill="#D6DDE5" />
+                        <path id="Vector_4"
+                          d="M17.9875 22.5287C15.5464 22.5287 13.5619 20.5053 13.5619 18.0165C13.5619 16.6296 14.1675 15.3471 15.2203 14.4922C16.003 13.8557 16.9905 13.5042 17.9875 13.5042C20.4285 13.5042 22.413 15.5276 22.413 18.0165C22.413 19.3084 21.8633 20.5433 20.9036 21.3983C20.0931 22.1297 19.0589 22.5287 17.9875 22.5287ZM17.9875 14.9292C17.298 14.9292 16.6458 15.1666 16.0961 15.6131C15.3787 16.1926 14.9595 17.076 14.9595 18.0165C14.9595 19.7169 16.3197 21.1038 17.9875 21.1038C18.7142 21.1038 19.4223 20.8283 19.9906 20.3343C20.6428 19.7454 21.0154 18.9094 21.0154 18.0165C21.0154 16.3161 19.6552 14.9292 17.9875 14.9292Z"
+                          fill="#D6DDE5" />
+                        <path id="Vector_5"
+                          d="M17.0557 19.6789C16.8227 19.6789 16.5898 19.5554 16.4594 19.3369C16.2637 18.995 16.3662 18.558 16.7016 18.3585L17.5308 17.855V16.8291C17.5308 16.4396 17.8476 16.1166 18.2296 16.1166C18.6116 16.1166 18.9284 16.4396 18.9284 16.8291V18.254C18.9284 18.501 18.7979 18.7385 18.593 18.862L17.4283 19.5744C17.2979 19.6504 17.1768 19.6789 17.0557 19.6789Z"
+                          fill="#D6DDE5" />
+                      </g>
+                    </g>
+                  </svg>
+                  وقت الخدمه
+                </label>
+              </div>
+              <div class="form-check col-sm-12 mb-3 col-lg-3">
+                <input #fixedTime class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" (click)="showTimeCounter(fixedTime)">
+                <label class="form-check-label" for="flexRadioDefault2">
+                  <svg width="23" height="24" viewBox="0 0 23 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="vuesax/outline/clock">
+                      <g id="clock">
+                        <path id="Vector"
+                          d="M11.7126 22.5287C6.18764 22.5287 1.6969 17.95 1.6969 12.3168C1.6969 6.68365 6.18764 2.10492 11.7126 2.10492C17.2375 2.10492 21.7282 6.68365 21.7282 12.3168C21.7282 17.95 17.2375 22.5287 11.7126 22.5287ZM11.7126 3.52984C6.96094 3.52984 3.09443 7.47211 3.09443 12.3168C3.09443 17.1615 6.96094 21.1038 11.7126 21.1038C16.4642 21.1038 20.3307 17.1615 20.3307 12.3168C20.3307 7.47211 16.4642 3.52984 11.7126 3.52984Z"
+                          fill="#D6DDE5" />
+                        <path id="Vector_2"
+                          d="M15.1691 16.0501C15.048 16.0501 14.9269 16.0216 14.8151 15.9456L11.9268 14.1882C11.2094 13.7512 10.6784 12.7918 10.6784 11.9463V8.05157C10.6784 7.66209 10.9951 7.33911 11.3771 7.33911C11.7591 7.33911 12.0759 7.66209 12.0759 8.05157V11.9463C12.0759 12.2883 12.3554 12.7918 12.6442 12.9628L15.5325 14.7202C15.8679 14.9197 15.9704 15.3566 15.7747 15.6986C15.635 15.9266 15.402 16.0501 15.1691 16.0501Z"
+                          fill="#D6DDE5" />
+                      </g>
+                    </g>
+                  </svg>
+                  وقت ثابت
+                </label>
+              </div>
+
+
+              <div class="col-sm-12 firstSecInput p-2 mb-3 col-lg-3" *ngIf="isShownTimeCounter">
+                <div class="input-group rounded-3" dir="ltr">
+                  <div class="btn btn-primary rounded-3">+</div>
+                  <input type="number" class="form-control firstSecInput text-center border-0" id="basic-url" aria-describedby="basic-addon3" >
+                  <div class="btn btn-primary rounded-3">-</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="mt-3">
+            <p class="secondTextColor mb-3">
+              <svg width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g id="vuesax/outline/info-circle">
+                  <g id="info-circle">
+                    <path id="Vector"
+                      d="M10.6299 20.3792C5.60724 20.3792 1.52475 16.2168 1.52475 11.0957C1.52475 5.97462 5.60724 1.81213 10.6299 1.81213C15.6525 1.81213 19.735 5.97462 19.735 11.0957C19.735 16.2168 15.6525 20.3792 10.6299 20.3792ZM10.6299 3.10751C6.31024 3.10751 2.79523 6.6914 2.79523 11.0957C2.79523 15.5 6.31024 19.0839 10.6299 19.0839C14.9495 19.0839 18.4645 15.5 18.4645 11.0957C18.4645 6.6914 14.9495 3.10751 10.6299 3.10751Z"
+                      fill="#D6DDE5" />
+                    <path id="Vector_2"
+                      d="M10.6299 12.607C10.2826 12.607 9.99463 12.3133 9.99463 11.9593V7.64134C9.99463 7.28727 10.2826 6.99365 10.6299 6.99365C10.9771 6.99365 11.2651 7.28727 11.2651 7.64134V11.9593C11.2651 12.3133 10.9771 12.607 10.6299 12.607Z"
+                      fill="#D6DDE5" />
+                    <path id="Vector_3"
+                      d="M10.6299 15.4136C10.5198 15.4136 10.4097 15.3877 10.308 15.3445C10.2064 15.3014 10.1132 15.2409 10.0285 15.1632C9.9523 15.0768 9.89301 14.9905 9.85066 14.8782C9.80831 14.7746 9.7829 14.6623 9.7829 14.55C9.7829 14.4378 9.80831 14.3255 9.85066 14.2219C9.89301 14.1182 9.9523 14.0232 10.0285 13.9369C10.1132 13.8592 10.2064 13.7987 10.308 13.7555C10.5113 13.6692 10.7485 13.6692 10.9517 13.7555C11.0534 13.7987 11.1466 13.8592 11.2313 13.9369C11.3075 14.0232 11.3668 14.1182 11.4091 14.2219C11.4515 14.3255 11.4769 14.4378 11.4769 14.55C11.4769 14.6623 11.4515 14.7746 11.4091 14.8782C11.3668 14.9905 11.3075 15.0768 11.2313 15.1632C11.1466 15.2409 11.0534 15.3014 10.9517 15.3445C10.8501 15.3877 10.74 15.4136 10.6299 15.4136Z"
+                      fill="#D6DDE5" />
+                  </g>
+                </g>
+              </svg>
+              الحجز المتعدد
+
+            </p>
+            <div class="flex-sm-row align-items-center justify-content-between flex-sm-column row flex-lg-row" dir="rtl">
+              <div class="form-check col-sm-12 mb-3 col-lg-4">
+                <input #oneReservation class="form-check-input" type="radio" name="flexRadioDefault2" id="flexRadioDefault3" checked (click)="showReservationCounter(oneReservation)">
+                <label class="form-check-label" for="flexRadioDefault3">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="17" height="21" viewBox="0 0 17 21" fill="none">
+                    <path
+                      d="M1.41643 17.6634C1.41643 15.1627 3.14157 13.0326 5.48609 12.6385L5.69727 12.603C7.57464 12.2874 9.48764 12.2874 11.365 12.603L11.5762 12.6385C13.9207 13.0326 15.6459 15.1627 15.6459 17.6634C15.6459 18.7442 14.814 19.6204 13.7878 19.6204H3.27451C2.24832 19.6204 1.41643 18.7442 1.41643 17.6634Z"
+                      stroke="#1C1C28" stroke-width="1.5" />
+                    <path
+                      d="M12.6814 5.04743C12.6814 7.30099 10.8233 9.12787 8.53116 9.12787C6.23904 9.12787 4.38091 7.30099 4.38091 5.04743C4.38091 2.79386 6.23904 0.96698 8.53116 0.96698C10.8233 0.96698 12.6814 2.79386 12.6814 5.04743Z"
+                      stroke="#1C1C28" stroke-width="1.5" />
+                  </svg>
+                   حجز واحد فقط
+                </label>
+              </div>
+              <div class="form-check col-sm-12 mb-3 col-lg-4">
+                <input #manyReservation class="form-check-input" type="radio" name="flexRadioDefault2" id="flexRadioDefault4"  (click)="showReservationCounter(manyReservation)">
+                <label class="form-check-label" for="flexRadioDefault4">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="21" height="19" viewBox="0 0 21 19" fill="none">
+                    <path
+                      d="M1.565 15.924C1.565 13.8491 3.04369 12.0817 5.05328 11.7547L5.2343 11.7253C6.84347 11.4634 8.48319 11.4634 10.0924 11.7253L10.2734 11.7547C12.283 12.0817 13.7617 13.8491 13.7617 15.924C13.7617 16.8208 13.0486 17.5478 12.169 17.5478H3.15765C2.27805 17.5478 1.565 16.8208 1.565 15.924Z"
+                      stroke="#363853" stroke-width="1.5" />
+                    <path
+                      d="M11.2207 4.59404C11.2207 6.59721 9.628 8.22111 7.66333 8.22111C5.69865 8.22111 4.10597 6.59721 4.10597 4.59404C4.10597 2.59087 5.69865 0.96698 7.66333 0.96698C9.628 0.96698 11.2207 2.59087 11.2207 4.59404Z"
+                      stroke="#363853" stroke-width="1.5" />
+                    <path
+                      d="M13.7617 8.22111C15.7264 8.22111 17.319 6.59721 17.319 4.59404C17.319 2.59087 15.7264 0.96698 13.7617 0.96698M16.1907 17.5478H18.2674C19.147 17.5478 19.86 16.8208 19.86 15.924C19.86 13.8491 18.3813 12.0817 16.3717 11.7547V11.7547C16.2513 11.7351 16.1292 11.7253 16.0071 11.7253C15.6822 11.7253 15.5812 11.7253 15.0232 11.7253"
+                      stroke="#363853" stroke-width="1.5" stroke-linecap="round" />
+                  </svg>
+                   حجز أكثر من شخص لنفس المقعد
+                </label>
+              </div>
+
+
+              <div class="col-sm-12 firstSecInput p-2 mb-3 col-lg-3" *ngIf="isShowReservationCounter">
+                <div class="input-group rounded-3" dir="ltr">
+                  <input type="number" class="form-control firstSecInput text-center border-0" id="basic-url"
+                    aria-describedby="basic-addon3" placeholder="موعد">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <div class="col-lg-6 col-sm-12 px-lg-3 px-0 ">
+        <div class="p-3 bg-light rounded-3 w-100 row mx-0" dir="rtl">
+          <div class="col-3 my-auto profile-image py-lg-5">
+            <label for="inpImg" class="form-label">
+              <img src="{{imgUrl}}" class="w-100 h-100" alt="" style="cursor: pointer; border-radius: 50%;">
+            </label>
+            <input #img hidden (change)="imgUpload($event)" type="file" class="form-control" id="inpImg" accept="image/*">
+
+          </div>
+          <div class="col-9 my-auto">
+            <p class="secondTextColor">
+              اسم المورد
+            </p>
+            <input type="text" class="form-control firstSecInput" id="basic-url" aria-describedby="basic-addon3" value="حسام الدين صلاح">
+          </div>
+        </div>
+
+
+
+
+        <div class="p-3 border bg-light rounded-3 flex-sm-row mt-3 justify-content-center justify-content-lg-between m-auto  flex-sm-column row flex-lg-row py-lg-4" dir="rtl">
+          <p class="col-sm-12 secondTextColor mb-3 col-lg-3">أختر نوع الموارد</p>
+
+
+
+          <div class="form-check col-sm-12 mb-3 col-lg-4">
+            <input class="form-check-input" type="radio" name="flexRadioDefault2" id="flexRadioDefault5">
+            <label class="form-check-label" for="flexRadioDefault5">
+               حجز خلال اليوم
+            </label>
+          </div>
+
+
+
+          <div class="form-check col-sm-12 mb-3 col-lg-4">
+            <input class="form-check-input" type="radio" name="flexRadioDefault2" id="flexRadioDefault6">
+            <label class="form-check-label" for="flexRadioDefault6">
+              حجز مده (أكثر من يوم)
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+

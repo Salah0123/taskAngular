@@ -1,0 +1,63 @@
+.select{
+  border-radius: 6px 0px 0px 6px;
+    border: 1px solid #E7E7E8;
+    background: #ECF1F6;
+}
+
+.firstSecInput{
+  border-radius: 9px;
+    // border: 1px solid #D9D9D9;
+    background: #F6F2F2;
+    height: fit-content;
+
+}
+.firstSecInput:focus{
+  box-shadow: none;
+}
+
+
+
+//image
+.profile-image{
+  position: relative;
+}
+.profile-image::after{
+  content: url("../../../assets/icon.svg");
+  position: absolute;
+}
+
+@media screen and (max-width: 480px) {
+
+  /* CSS rules specific to smaller screens */
+  .profile-image::after {
+      content: url("../../../assets/icon.svg");
+      position: absolute;
+      left: 4px;
+        top: -7px;
+    }
+}
+
+/* Styles for screens with a minimum width of 768 pixels */
+@media screen and (min-width: 768px) {
+
+  /* CSS rules specific to larger screens */
+  .profile-image::after {
+      content: url("../../../assets/icon.svg");
+      position: absolute;
+      left: 45px;
+    }
+}
+
+/* Styles for screens between 481px and 767px */
+@media screen and (min-width: 481px) and (max-width: 767px) {
+
+  /* CSS rules specific to medium-sized screens */
+  .profile-image::after {
+      content: url("../../../assets/icon.svg");
+      position: absolute;
+      left: 50px;
+    }
+}
+
+
+

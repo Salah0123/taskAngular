@@ -1,0 +1,21 @@
+{
+  "dir": "rtl",
+  "buttons":{
+    "SaveChanges":"Save Changes"
+  },
+  "labels":{
+
+  },
+  "general":{
+
+  },
+  "days":{
+    "Saturday":"Saturday",
+    "Sunday":"Sunday",
+    "Monday":"Monday",
+    "Tuesday":"Tuesday",
+    "Wednesday":"Wednesday",
+    "Thursday":"Thursday",
+    "Friday":"Friday"
+  }
+}

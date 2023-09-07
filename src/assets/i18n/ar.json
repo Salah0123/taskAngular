@@ -1,0 +1,17 @@
+{
+  "dir": "ltr",
+  "buttons": {
+    "SaveChanges": "حفظ التغيرات"
+  },
+  "labels": {},
+  "general": {},
+  "days": {
+    "Saturday": "السبت",
+    "Sunday": "الأحد",
+    "Monday": "الأثنين",
+    "Tuesday": "الثلاثاء",
+    "Wednesday": "الإربعاء",
+    "Thursday": "الخميس",
+    "Friday": "الجمعه"
+  }
+}
